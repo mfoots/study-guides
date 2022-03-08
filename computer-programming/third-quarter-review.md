@@ -168,7 +168,7 @@ Objects are **mutable**. This means an object passed to a function can be modifi
 
 When objects are copied the copy is an alias of the original. The `copy` module has functions like `copy.copy(obj)` that creates a **shallow copy** of the object and any references but not its embedded object. There is also a `copy.deepcopy(obj)` function that creates a **deep copy** of an object that also includes embedded objects and the objects they refer to.
 
-## Classes and Functions
+## Functions
 
 There are two types of functions: pure functions and modifiers
 
@@ -176,7 +176,7 @@ There are two types of functions: pure functions and modifiers
 
 Modifiers, on the other hand, change the objects they are passed, and as a result often do not return any value.
 
-## Classes and Methods
+## Class Methods
 
 A **method** is a function that is associated with a particular class.
 - methods are defined inside the class definition
@@ -189,6 +189,8 @@ There are a few special methods commonly used when defining classes.
 - There are numerous methods such as `__add__(self)` and `__lt__(self)` that are used to **overload** operators such as `+` and `< ` operators so that they operate on programmer-defined type operands as well.
 
 Notice that each of these methods have a required first parameter called `self` which refers to the particular object instance that is invoking the method. Other parameters, if needed, should be listed after the `self` parameter.
+
+## Polymorphism
 
 Functions that work with several types are called **polymorphic**. Polymorphism promotes code reuse.
 
@@ -226,20 +228,24 @@ window.title('Hello, Tkinter!')
 mainloop() # keeps the app running
 ```
 
+## Widgets
+
 Graphical objects in `tkinter` are called widgets.
 
 Common widgets:
-- Label – displays text content
-- Button – used to execute a command
-- Entry – single line text field
-- Frame – container for other widgets
-- Checkbutton – independent option
-- Radiobutton – for groups of related options
-- Combobox – dropdown list of options
-- Menu - window menu bar widget
-- Toplevel – creates a new window
-- Text – multiline text field
-- Scrollbar – vertical or horizontal scroll bar at edge of widget
+- `Label()` – displays text content
+- `Button()` – used to execute a command
+- `Entry()` – single line text field
+- `Frame()` – container for other widgets
+- `Checkbutton()` – independent option
+- `Radiobutton()` – for groups of related options
+- `Combobox()` – dropdown list of options
+- `Menu()` - window menu bar widget
+- `Toplevel()` – creates a new window
+- `Text()` – multiline text field
+- `Scrollbar()` – vertical or horizontal scroll bar at edge of widget
+
+## Widget Options
 
 Widgets may be configured with several options using the `.configure()` method.
 
@@ -252,7 +258,7 @@ label.configure(
     padding=10,
 )
 ```
-
+## Geometry Managers
 For widgets to appear on the screen they must use a geometry manager. There are three geometry managers: grid, pack, and place. We used grid because it allows us to arrange widgets in rows and columns.
 
 ```python
@@ -269,12 +275,15 @@ button_submit.grid(row=1, column=0, columnspan=2)
 
 Note in the example above that for each widget, the grid method is called and is passed row and column **keyword** arguments. Also notice the columnspan argument used with the Button widget.
 
+### Grid Options
 Other options for grid are:
 - `padx` – horizontal margin around widget
 - `pady` – vertical margin around widget
 - `ipadx` – horizontal padding inside widget
 - `ipady` – vertical padding inside widget
 - `sticky` – assigned `N`, `S`, `E`, `W` to attach the widget to one or more sides of the grid cell
+
+## Varibale Objects
 
 Variable objects are used in `tkinter` programs to interact with widgets. These variable objects are able to dynamically `.get()` and `.set()` the values associated with a widget.
 
