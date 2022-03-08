@@ -283,7 +283,7 @@ Other options for grid are:
 - `ipady` – vertical padding inside widget
 - `sticky` – assigned `N`, `S`, `E`, `W` to attach the widget to one or more sides of the grid cell
 
-## Varibale Objects
+## Variable Objects
 
 Variable objects are used in `tkinter` programs to interact with widgets. These variable objects are able to dynamically `.get()` and `.set()` the values associated with a widget.
 
@@ -344,4 +344,6 @@ Clearing text:
 ```python
 text1.delete('1.0', 'end')
 ```
+
+## The `Filedialog` Module
 
