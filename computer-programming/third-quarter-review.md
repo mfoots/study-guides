@@ -1,5 +1,7 @@
 #ThinkPython
 
+==Note: This review is still a work in progress.==
+
 # File IO
 
 When you run a program, the code instructions and data is stored in RAM. RAM is **volatile** memory. When the program ends or the computer powers off, the contents of RAM is cleared.
