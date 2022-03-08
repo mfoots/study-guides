@@ -347,3 +347,9 @@ text1.delete('1.0', 'end')
 
 ## The `Filedialog` Module
 
+The `filedialog` module contains several functions that interact with the operating system specific dialogs for opening and saving files.
+
+- `filedialog.askopenfilename()`
+- `filedialog.asksaveasfilename()`
+
+Each of these have options like `initialdir` and `filetypes` that modify the default behavior of the dialogs.
