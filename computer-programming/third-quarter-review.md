@@ -1,6 +1,6 @@
 #ThinkPython
 
-==Note: This review is still a work in progress.==
+> Note: This review is still a work in progress.
 
 # File IO
 
