@@ -96,10 +96,10 @@ The `'c'` argument passed to the `dbm.open()` function means the database file w
 
 Python's `pickle` module allows almost all data types to be stored in a database as a serialized string.
 
-Use the `pickel.dumps()` function to serialize the data type and use the `pickle.loads()` function to de-serialize the data type back into its original form.
+Use the `pickle.dumps()` function to serialize the data type and use the `pickle.loads()` function to de-serialize the data type back into its original form.
 
 ```python
-import pickel
+import pickle
 t1 = (1, 2, 3)
 s = pickle.dumps(t1)
 t2 = pickle.loads(s)
