@@ -174,7 +174,7 @@ There are two types of functions: pure functions and modifiers
 
 **Pure functions** do not change the objects they are passed. These functions will often return a new instance of an object.
 
-Modifiers, on the other hand, change the objects they are passed, and as a result often do not return any value.
+**Modifiers**, on the other hand, change the objects they are passed, and as a result often do not return any value.
 
 ## Class Methods
 
