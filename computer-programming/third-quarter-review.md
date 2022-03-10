@@ -55,7 +55,7 @@ A path to a file includes all the directories and subdirectories the file is con
 
 Python includes the `os` module with many useful functions for working with paths and directories.
 
-The `os.getcwd()` function will return the current working director as an absolute path.
+The `os.getcwd()` function will return the current working directory as an absolute path.
 
 The `os.path.join(path, file)` function returns a path made from a path and filename that is correctly delimited for the operating system where the code is running.
 
