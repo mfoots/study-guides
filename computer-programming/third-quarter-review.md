@@ -190,7 +190,7 @@ There are a few special methods commonly used when defining classes.
 
 Notice that each of these methods have a required first parameter called `self` which refers to the particular object instance that is invoking the method. Other parameters, if needed, should be listed after the `self` parameter.
 
-Decorator are keywords that are prefixed with an @ symbol that modify the behavior of a function. The `@proprty` decorator allows a method to be used as if it were an attribute.
+Decorator are keywords that are prefixed with an @ symbol that modify the behavior of a function. The `@property` decorator allows a method to be used as if it were an attribute.
 
 ## Polymorphism
 
